@@ -7,40 +7,37 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#F5F5F5"
         android:orientation="vertical"
         android:padding="20dp">
 
-        <!-- Title -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Carbon Footprint Calculator 🌱"
-            android:textSize="24sp"
-            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
             android:gravity="center"
-            android:layout_marginBottom="24dp"/>
+            android:text="Carbon Footprint Calculator"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-        <!-- Travel Input -->
         <EditText
             android:id="@+id/travelInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:hint="Travel distance (km)"
             android:inputType="numberDecimal"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp"/>
+            android:padding="12dp" />
 
-        <!-- Electricity Input -->
         <EditText
             android:id="@+id/electricityInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:hint="Electricity usage (kWh)"
             android:inputType="numberDecimal"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp"/>
+            android:padding="12dp" />
 
-        <!-- Food Selection -->
         <Spinner
             android:id="@+id/foodSpinner"
             android:layout_width="match_parent"
@@ -48,13 +45,14 @@
             android:layout_marginBottom="48dp"
             android:minHeight="48dp" />
 
-        <!-- Button -->
         <Button
             android:id="@+id/calculateBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:padding="14dp"
             android:text="Calculate Footprint"
-            android:padding="12dp"/>
+            android:textColor="#FFFFFF" />
 
     </LinearLayout>
 

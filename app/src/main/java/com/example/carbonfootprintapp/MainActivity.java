@@ -2,7 +2,6 @@ package com.example.carbonfootprintapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.*;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
         // Button Click
         calculateBtn.setOnClickListener(view -> {
 
-            String travelStr = travelInput.getText().toString();
-            String electricityStr = electricityInput.getText().toString();
+            String travelStr = travelInput.getText().toString().trim();
+            String electricityStr = electricityInput.getText().toString().trim();
 
             if (travelStr.isEmpty() || electricityStr.isEmpty()) {
                 Toast.makeText(this, "Please enter all values", Toast.LENGTH_SHORT).show();

@@ -1,3 +1,6 @@
+import org.gradle.accessors.dm.LibrariesForLibs
+
+
 plugins {
     alias(libs.plugins.android.application)
 }

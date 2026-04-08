@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carbon Footprint Calculator 🌱"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Travel Input -->
+        <EditText
+            android:id="@+id/travelInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Travel distance (km)"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Electricity Input -->
+        <EditText
+            android:id="@+id/electricityInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Electricity usage (kWh)"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Food Selection -->
+        <Spinner
+            android:id="@+id/foodSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:minHeight="48dp" />
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/calculateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Footprint"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
